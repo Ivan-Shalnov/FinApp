@@ -1,0 +1,94 @@
+.card-balance {
+  padding: 63px 23px 47px 36px;
+  position: relative;
+  overflow: hidden;
+}
+.card-balance__title {
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 1.24;
+}
+.card-balance__transaction {
+  margin-bottom: 4px;
+  display: block;
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.21;
+
+  color: $seventh;
+}
+.card-balance__transaction-title {
+  margin-bottom: 15px;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $fourth;
+}
+.card-balance__button {
+  margin-left: 5px;
+}
+.card-balance__balance-container {
+  position: absolute;
+  top: 45%;
+  right: 23px;
+  transform: translateY(-50%);
+  @media screen and(min-width: 540px) {
+    width: 300px;
+    height: 304px;
+    padding-top: 114px;
+    padding-left: 30px;
+    top: -18px;
+    right: -84px;
+    background: $first;
+    border-radius: 155px;
+    transform: none;
+  }
+}
+.card-balance__balance {
+  display: block;
+  font-family: 'Inter';
+  font-weight: 800;
+
+  font-size: calc(28px + 17 * (100vw - 320px) / 80);
+  line-height: 1.2;
+  color: $second;
+  @media screen and (min-width: 400px) {
+    font-size: 45px;
+  }
+  @media screen and (min-width: 540px) {
+    color: #ffffff;
+  }
+}
+
+.card-balance__balance--coins {
+  font-size: calc(12px + 7 * (100vw - 320px) / 80);
+  line-height: 1.21;
+
+  color: rgba(0, 0, 0, 0.31);
+  @media screen and (min-width: 400px) {
+    font-size: 19px;
+  }
+  @media screen and (min-width: 540px) {
+    color: rgba(255, 255, 255, 0.31);
+  }
+}
+.card-balance__balance-title {
+  font-weight: 900;
+  font-size: calc(8px + 4 * (100vw - 320px) / 80);
+  line-height: 1.25;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: $second;
+
+  opacity: 0.5;
+  @media screen and (min-width: 400px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 540px) {
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,32 @@
+.button {
+  min-width: 29vw;
+  padding: 14px 13px;
+  border: 1px solid $first;
+  border-radius: 46px;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  @media screen and (min-width: 400px) {
+    min-width: 120px;
+    padding: 14px 20px;
+  }
+}
+.button--stroke {
+  background-color: transparent;
+  color: $first;
+}
+.button--primary {
+  background-color: $first;
+  color: #ffffff;
+}
+.button--small {
+  padding: 7px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+}

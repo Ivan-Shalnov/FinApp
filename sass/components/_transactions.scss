@@ -1,0 +1,57 @@
+.transactions__item {
+  display: flex;
+  align-items: center;
+}
+.transactions__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.transactions__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: $fifteenth;
+}
+.transactions__icon-withdraw {
+  transform: rotateZ(-90deg);
+  fill: $thirteenth;
+}
+.transactions__icon-topup {
+  transform: rotateZ(90deg);
+  fill: $seventh;
+}
+.transactions__inf {
+  margin-left: 20px;
+}
+.transactions__operation {
+  margin-bottom: 2px;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 1.23;
+  letter-spacing: -0.02em;
+
+  color: $second;
+}
+.transactions__operation--color-accent {
+  color: $first;
+}
+.transactions_descr {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+
+  color: $twelfth;
+}
+.transactions__amount {
+  margin-left: auto;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.27;
+
+  letter-spacing: -0.02em;
+
+  color: $thirteenth;
+}
+.transactions__amount--color {
+  color: $fourteenth;
+}

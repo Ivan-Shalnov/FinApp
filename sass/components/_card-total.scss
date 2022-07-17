@@ -1,0 +1,38 @@
+.card-total {
+  padding: 15px 25px;
+  flex-grow: 1;
+  @media screen and (min-width: 1080px) {
+    width: auto;
+  }
+}
+
+.card-total__title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $fourth;
+}
+.card-total__total {
+  margin-bottom: 15px;
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: calc(15px + 14 * (100vw - 320px) / 100);
+
+  line-height: 1.2;
+
+  color: $second;
+  @media screen and (min-width: 420px) {
+    font-size: 29px;
+  }
+}
+.card-total__total--coins {
+  font-size: calc(10px + 9 * (100vw - 320px) / 100);
+  line-height: 1.21;
+
+  color: $eleventh;
+  @media screen and (min-width: 420px) {
+    font-size: 19px;
+  }
+}

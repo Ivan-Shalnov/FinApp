@@ -5,6 +5,277 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FinApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Mulish:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="menu-container">
+        <div class="menu">
+          <button class="menu__btn" type="button" data-menu-button>
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <a href="./index.html" class="logo menu__logo">
+            <svg class="logo__icon" width="27" height="27">
+              <use href="./images/icons.svg#icon-so-wallet-coin"></use></svg
+            ><span class="logo--text-color">Fin</span>app</a
+          >
+          <div class="menu__container" data-menu>
+            <ul class="menu__list-main">
+              <li class="menu__item">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-dashboard"></use></svg
+                  >Dashboard</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-invoices"></use></svg
+                  >Invoice</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-wallet"></use></svg
+                  >Wallets</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-chart"></use></svg
+                  >Reports</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-transfer"></use></svg
+                  >Transactions</a
+                >
+              </li>
+            </ul>
+            <ul class="menu__list-secondary">
+              <li class="menu__item-secondary">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-settings"></use></svg
+                  >Settings</a
+                >
+              </li>
+              <li class="menu__item-secondary">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-help"></use></svg
+                  >Help</a
+                >
+              </li>
+              <li class="menu__item-secondary">
+                <a class="menu__link" href="#"
+                  ><svg class="menu__item-icon">
+                    <use href="./images/icons.svg#icon-arrow-left"></use></svg
+                  >Log Out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container container--cards">
+        <!-- BALANCE CARD -->
+        <div class="card card-balance">
+          <div>
+            <h3 class="card-balance__title">Total Ballance</h3>
+            <span class="card-balance__transaction">+ $28,55</span>
+            <span class="card-balance__transaction-title"
+              >Last Transaction</span
+            >
+            <button class="button button--primary" type="button">Top Up</button>
+            <button
+              class="button button--stroke card-balance__button"
+              type="button"
+            >
+              WITHDRAW
+            </button>
+          </div>
+          <div class="card-balance__balance-container">
+            <span class="card-balance__balance"
+              >$ 200<span class="card-balance__balance--coins">.58</span></span
+            >
+            <span class="card-balance__balance-title">WALLETS AMOUNT</span>
+          </div>
+        </div>
+        <!-- TOTAL INCOME/SAVES CARDS-->
+        <div class="card-container card-total-income-saves">
+          <!-- INCOME -->
+          <div class="card card-total">
+            <h4 class="card-total__title">Total Income</h4>
+            <h3 class="card-total__total">
+              $ 18532<span class="card-total__total--coins">.52</span>
+            </h3>
+            <span class="percentages">
+              <svg class="percentages__icon">
+                <use href="./images/icons.svg#icon-grown-up"></use>
+              </svg>
+              + 11%</span
+            >
+          </div>
+          <!-- SAVES -->
+          <div class="card card-total">
+            <h4 class="card-total__title">Total Saves</h4>
+            <h3 class="card-total__total">
+              $ 18532<span class="card-total__total--coins">.52</span>
+            </h3>
+            <span class="percentages percentages--down">
+              <svg class="percentages__icon percentages__icon--down">
+                <use href="./images/icons.svg#icon-grown-up"></use>
+              </svg>
+              - 8%</span
+            >
+          </div>
+        </div>
+        <!-- TRANSACTIONS CARD-->
+        <div class="card">
+          <svg class="card__icon-dots">
+            <use href="./images/icons.svg#icon-three-dots"></use>
+          </svg>
+          <h3 class="card__title">Latest Transactions</h3>
+          <ul class="transactions">
+            <li class="transactions__item">
+              <img
+                class="transactions__icon"
+                src="./images/johdi.jpg"
+                alt="Photo of Johdi"
+              />
+              <dl class="transactions__inf">
+                <dt class="transactions__operation">
+                  Transfer to
+                  <span class="transactions__operation--color-accent"
+                    >Johdi</span
+                  >
+                </dt>
+                <dd class="transactions_descr">Personal Payment</dd>
+              </dl>
+              <span class="transactions__amount">-$35.00</span>
+            </li>
+            <li class="transactions__item">
+              <img
+                class="transactions__icon"
+                src="./images/nike.png"
+                alt="Nike logo"
+              />
+              <dl class="transactions__inf">
+                <dt class="transactions__operation">Nike</dt>
+                <dd class="transactions_descr">Shopping</dd>
+              </dl>
+              <span class="transactions__amount">-$128.00</span>
+            </li>
+            <li class="transactions__item">
+              <img
+                class="transactions__icon"
+                src="./images/mobile.png"
+                alt="Icon of mobile"
+              />
+              <dl class="transactions__inf">
+                <dt class="transactions__operation">Mobile Phone Top Up</dt>
+                <dd class="transactions_descr">Communication</dd>
+              </dl>
+              <span class="transactions__amount">-$10.00</span>
+            </li>
+            <li class="transactions__item">
+              <svg class="transactions__icon transactions__icon-topup">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+              <dl class="transactions__inf">
+                <dt class="transactions__operation">Balance Top-Up</dt>
+                <dd class="transactions_descr">Personal Payment</dd>
+              </dl>
+              <span class="transactions__amount transactions__amount--color"
+                >+$300.58</span
+              >
+            </li>
+            <li class="transactions__item">
+              <svg class="transactions__icon transactions__icon-withdraw">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+              <dl class="transactions__inf">
+                <dt class="transactions__operation">Withdrawal</dt>
+                <dd class="transactions_descr">Personal Payment</dd>
+              </dl>
+              <span class="transactions__amount">-$35.00</span>
+            </li>
+          </ul>
+        </div>
+        <!-- REPORT CARD -->
+        <div class="card">
+          <svg class="card__icon-dots">
+            <use href="./images/icons.svg#icon-three-dots"></use>
+          </svg>
+          <h3 class="card__title">Report</h3>
+          <canvas id="reportChart"></canvas>
+        </div>
+        <!-- TOTAL EXPENSE / UPCOMING -->
+        <div class="card-container">
+          <!-- EXPENSE -->
+          <div class="card card-total">
+            <h4 class="card-total__title">Total Expense</h4>
+            <h3 class="card-total__total">
+              $ 5000<span class="card-total__total--coins">.00</span>
+            </h3>
+            <span class="percentages">
+              <svg class="percentages__icon">
+                <use href="./images/icons.svg#icon-grown-up"></use>
+              </svg>
+              + 8%</span
+            >
+          </div>
+          <!-- UPCOMING -->
+          <div class="card card-total">
+            <h4 class="card-total__title">Upcoming</h4>
+            <h3 class="card-total__total">
+              $ 201<span class="card-total__total--coins">.48</span>
+            </h3>
+            <button class="button button--stroke button--small" type="button">
+              View Details
+            </button>
+          </div>
+        </div>
+        <!-- Spending This Month -->
+        <div class="card">
+          <svg class="card__icon-dots">
+            <use href="./images/icons.svg#icon-three-dots"></use>
+          </svg>
+          <h3 class="card__title card__title--margin-bottom45">
+            Spending This Month
+          </h3>
+          <canvas id="spendingChart" height="328"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+      integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/charts.js"></script>
+  </body>
 </html>

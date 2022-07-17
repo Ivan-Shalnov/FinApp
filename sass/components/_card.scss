@@ -1,0 +1,37 @@
+.card {
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 8px 13px 44px -6px #dfdbf7;
+  border-radius: 20px;
+  position: relative;
+  @media screen and (max-width: 1079px) {
+    .container--cards > &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 1080px) {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+}
+.card__icon-dots {
+  width: 24px;
+  height: 25px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  fill: $fourth;
+  cursor: pointer;
+}
+.card__title {
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+
+  color: $second;
+}
+.card__title--margin-bottom45 {
+  margin-bottom: 45px;
+}

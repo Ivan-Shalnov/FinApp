@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+}
+body {
+  background: $sixth;
+  font-family: 'Mulish';
+}
+.menu-container {
+  @media screen and (max-width: 1279px) {
+    padding: 0 15px;
+  }
+}
+.container {
+  padding: 0 15px;
+}
+.container--cards {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @media screen and (min-width: 1080px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .container--cards > div {
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 3;
+    }
+    &:nth-child(3) {
+      order: 5;
+    }
+    &:nth-child(4) {
+      order: 2;
+    }
+    &:nth-child(5) {
+      order: 4;
+    }
+    &:nth-child(6) {
+      order: 6;
+    }
+  }
+}
+.main-container {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}

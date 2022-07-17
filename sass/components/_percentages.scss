@@ -1,0 +1,28 @@
+.percentages {
+  padding: 7px 12px;
+  display: inline-block;
+  background: $eigth;
+  border-radius: 19px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: calc(10px + 5 * (100vw - 320px) / 30);
+  line-height: 1.2;
+
+  color: $ninth;
+  @media screen and (min-width: 350px) {
+    font-size: 15px;
+  }
+}
+.percentages--down {
+  color: $tenth;
+}
+.percentages__icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 4px;
+}
+.percentages__icon--down {
+  transform: rotateZ(90deg);
+}

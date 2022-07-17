@@ -1,0 +1,17 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  fill: $first;
+  color: $first;
+
+  font-family: 'Mulish';
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 1.23;
+}
+.logo__icon {
+  margin-right: 9px;
+}
+.logo--text-color {
+  color: $second;
+}
