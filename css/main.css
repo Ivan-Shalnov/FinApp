@@ -537,4 +537,12 @@ body {
 
 .transactions__amount--color {
   color: #6ed69e;
+}
+
+#reportChart {
+  max-height: 170px !important;
+}
+
+#spendingChart {
+  max-height: 330px !important;
 }/*# sourceMappingURL=main.css.map */

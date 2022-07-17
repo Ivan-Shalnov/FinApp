@@ -21,6 +21,8 @@ const reportChart = new Chart(ctx, {
     ],
   },
   options: {
+    responsive: true,
+    aspectRatio: 2.72,
     scales: {
       y: {
         beginAtZero: true,
@@ -89,6 +91,7 @@ const spendingChart = new Chart(ctx2, {
   },
   options: {
     responsive: true,
+
     cutout: '76%',
     plugins: {
       legend: {
